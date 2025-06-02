@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Birthday Special</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loader Page -->
+  <section id="loaderPage" class="page active">
+    <div id="timerContainer">
+      <svg id="progressCircle" width="130" height="130" viewBox="0 0 130 130">
+        <circle cx="65" cy="65" r="54" stroke="#FF69B4" stroke-width="12" fill="none" />
+        <circle
+          id="progress"
+          cx="65"
+          cy="65"
+          r="54"
+          stroke="#DB7093"
+          stroke-width="12"
+          fill="none"
+          stroke-linecap="round"
+          stroke-dasharray="339.292"
+          stroke-dashoffset="339.292"
+        />
+      </svg>
+      <div id="timerText">10</div>
+    </div>
+    <button id="goToQuotesBtn" class="btn" style="display:none;">Tap to begin 💝</button>
+  </section>
+
+  <!-- Birthday Cake + Quotes Page -->
+  <section id="quotesPage" class="page">
+    <div id="birthdayCake">
+      <div class="cakeLayer bottom"></div>
+      <div class="cakeLayer middle"></div>
+      <div class="cakeLayer top"></div>
+      <div class="candles">
+        <div class="candle" style="--delay:0s"></div>
+        <div class="candle" style="--delay:0.2s"></div>
+        <div class="candle" style="--delay:0.4s"></div>
+      </div>
+    </div>
+
+    <div id="quotesContainer"></div>
+    <button id="toWishBtn" class="btn" style="display:none;">Next</button>
+  </section>
+
+  <!-- Long Wish Page -->
+  <section id="wishPage" class="page">
+    <h1 class="romanticFont">My Love,</h1>
+    <p class="longWish romanticFont">
+      Happy Birthday to my pasandida aurat who means the world to me! 🎉💕
+      <br>
+
+Honestly, words can’t even begin to capture how much you mean to me — but I’m going to try, because you deserve to hear it all.
+<br>
+Thank you...
+<br>
+Thank you for showing up in my life and choosing to stay. For the endless laughter, those late-night heart-to-hearts, the quiet moments that spoke volumes, and even the tough talks we braved together. Thank you for being unapologetically you — real, beautiful, and endlessly amazing. For seeing me when I felt invisible and reminding me every day that I matter.
+
+You’re my calm when life’s a mess, my steady when everything feels shaky, and the spark that lights up even my darkest days. You’ve taught me that love isn’t always fireworks — sometimes it’s a quiet, steady flame that just keeps glowing. And girl, that flame? That’s you.
+
+You’re not just my best friend — you’re the one who turned my world upside down in the best way, who made me see myself through kinder eyes, and who’s somehow stolen my heart without me even realizing it. 💖
+
+So today, I hope you feel at least a fraction of the love and magic you’ve given me. Because you deserve all the happiness, joy, and little surprises this year can bring.
+
+Happy Birthday to my beloved, my secret keeper, and the one I’m absolutely lucky (and maybe a little obsessed) to love. 😘💞
+    </p>
+    <button id="toGalleryBtn" class="btn">Photo Gallery</button>
+  </section>
+
+  <!-- Photo Gallery Page -->
+  <section id="galleryPage" class="page">
+    <h2 class="romanticFont">💖 To My Forever Besti – Love You Endlessly 💫</h2>
+    <div id="galleryGrid">
+      <!-- Images inserted by JS -->
+    </div>
+    <button id="backToWishBtn" class="btn">Back to Wish</button>
+  </section>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="./Audio.mpeg" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
